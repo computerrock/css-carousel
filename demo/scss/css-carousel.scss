@@ -1,0 +1,67 @@
+/*  css carousel
+-----------------------------------*/
+
+$css-carousel: (
+    slides: 4,
+    transition-speed: 1s
+);
+
+.css-carousel {
+    position: relative;
+
+    // hide input radio fields
+    input[name="carousel"] {
+        display: none;
+    }
+
+    // carousel navigation
+    .carousel-nav {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+
+        label {
+            display: inline-block;
+            margin: 0 10px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.25s;
+        }
+    }
+
+    // active carousel navigation
+    @for $i from 1 through map_get($css-carousel, slides) {
+        #carousel-#{$i}:checked ~ .carousel-nav label[for="carousel-#{$i}"] {
+            background-color: #fff;
+        }
+    }
+
+    // carousel slides
+    .carousel-slides {
+        width: 100%;
+        overflow: hidden;
+
+        .carousel-inner {
+            width: (100% * map_get($css-carousel, slides));
+            transition: margin map_get($css-carousel, transition-speed);
+        }
+
+        .carousel-item {
+            float: left;
+            width: (100% / map_get($css-carousel, slides));
+        }
+    }
+
+    // active carousel slides
+    @for $i from 1 through map_get($css-carousel, slides) {
+        #carousel-#{$i}:checked ~ .carousel-slides .carousel-inner {
+            margin-left: (-100% * ($i - 1));
+        }
+    }
+}

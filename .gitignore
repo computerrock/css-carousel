@@ -1,0 +1,7 @@
+# ignore system files
+.DS_Store
+.idea
+
+# ignore node.js modules files
+npm-debug.log
+node_modules/

@@ -1,0 +1,128 @@
+/*  demo
+-----------------------------------*/
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: Roboto, Arial, Sans-Serif;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 78px;
+  border-bottom: 1px solid #ededed;
+}
+
+.header .header-logo {
+  float: left;
+  margin: 0 0 0 15px;
+}
+
+.header .header-logo svg {
+  height: 78px;
+  display: block;
+}
+
+.header h1.header-title {
+  float: right;
+  margin: 0 35px;
+  font-size: 38px;
+  line-height: 78px;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.header ul.header-nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ul.header-nav li {
+  border-left: 1px solid #ededed;
+  float: left;
+  font-size: 18px;
+  line-height: 78px;
+}
+
+.header ul.header-nav li a {
+  padding: 0 35px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.header ul.header-nav li a:hover {
+  background-color: #f5f5f3;
+}
+
+.content {
+  position: fixed;
+  top: 79px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.content .css-carousel {
+  height: 100%;
+}
+
+.content .css-carousel .carousel-slides,
+.content .css-carousel .carousel-inner,
+.content .css-carousel .carousel-item {
+  height: 100%;
+}
+
+.content .css-carousel .carousel-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: relative;
+}
+
+.content .css-carousel .carousel-item .center {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  position: relative;
+}
+
+.content .css-carousel .carousel-item .center .title {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 70px;
+  height: 100px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content .css-carousel .carousel-item .credit {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.content .css-carousel .carousel-item .credit a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.content .css-carousel .carousel-item .credit a:hover {
+  text-decoration: none;
+}

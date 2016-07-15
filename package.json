@@ -1,0 +1,42 @@
+{
+    "name": "css-carousel",
+    "version": "1.0.0",
+    "description": "CSS Carousel",
+    "author": "Computer Rock",
+    "contributors": [
+        {
+            "name": "Milos Jankovic",
+            "email": "milos.jankovic@computerrock.com"
+        }
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "keywords": [
+        "css carousel",
+        "css slider",
+        "scss carousel",
+        "scss slider"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "homepage": "https://computerrock.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/computerrock/css-carousel.git"
+    },
+    "bugs": {
+        "url": "https://github.com/computerrock/css-carousel/issues"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-batch": "^1.0.5",
+        "gulp-plumber": "^1.1.0",
+        "gulp-sass": "^2.3.2",
+        "gulp-tap": "^0.1.3",
+        "gulp-util": "^3.0.7",
+        "gulp-watch": "^4.3.8",
+        "path": "^0.12.7"
+    }
+}

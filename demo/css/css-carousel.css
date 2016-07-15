@@ -1,0 +1,84 @@
+/*  css carousel
+-----------------------------------*/
+.css-carousel {
+  position: relative;
+}
+
+.css-carousel input[name="carousel"] {
+  display: none;
+}
+
+.css-carousel .carousel-nav {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.css-carousel .carousel-nav label {
+  display: inline-block;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.css-carousel #carousel-1:checked ~ .carousel-nav label[for="carousel-1"] {
+  background-color: #fff;
+}
+
+.css-carousel #carousel-2:checked ~ .carousel-nav label[for="carousel-2"] {
+  background-color: #fff;
+}
+
+.css-carousel #carousel-3:checked ~ .carousel-nav label[for="carousel-3"] {
+  background-color: #fff;
+}
+
+.css-carousel #carousel-4:checked ~ .carousel-nav label[for="carousel-4"] {
+  background-color: #fff;
+}
+
+.css-carousel .carousel-slides {
+  width: 100%;
+  overflow: hidden;
+}
+
+.css-carousel .carousel-slides .carousel-inner {
+  width: 400%;
+  -webkit-transition: margin 1s;
+  -moz-transition: margin 1s;
+  -o-transition: margin 1s;
+  transition: margin 1s;
+}
+
+.css-carousel .carousel-slides .carousel-item {
+  float: left;
+  width: 25%;
+}
+
+.css-carousel #carousel-1:checked ~ .carousel-slides .carousel-inner {
+  margin-left: 0%;
+}
+
+.css-carousel #carousel-2:checked ~ .carousel-slides .carousel-inner {
+  margin-left: -100%;
+}
+
+.css-carousel #carousel-3:checked ~ .carousel-slides .carousel-inner {
+  margin-left: -200%;
+}
+
+.css-carousel #carousel-4:checked ~ .carousel-slides .carousel-inner {
+  margin-left: -300%;
+}
